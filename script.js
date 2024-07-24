@@ -10,12 +10,12 @@ function createGrid(size) {
     let grids = document.querySelectorAll('.container div');
 
     grids.forEach((grid) => {
-        grid.style.border = '1px solid black';
+        grid.style.border = '1px solid gray';
         grid.style.boxSizing = 'border-box';
         grid.style.flex = `1 0 calc(100% / ${size})`;
         grid.style.height = `calc(100% / ${size})`;
         grid.addEventListener('mouseover', () => {
-            grid.style.backgroundColor = 'blue';
+            grid.style.backgroundColor = 'red';
         });
     });
 }
